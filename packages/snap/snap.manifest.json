@@ -1,13 +1,13 @@
 {
   "version": "0.7.5",
-  "description": "The Polkadot snap.",
-  "proposedName": "Polkadot Wallet",
+  "description": "The Astar snap.",
+  "proposedName": "Astar Wallet",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/chainsafe/metamask-snap-polkadot.git"
   },
   "source": {
-    "shasum": "Jp+wnYOTlw1i6+UE7k7m9vL2lDUQ+tJp7TPeAlwc1SE=",
+    "shasum": "HiL4Lsv4+DdkRx7xHijwmQEfPrgYWgt7mQfz5IC/+Bw=",
     "location": {
       "npm": {
         "filePath": "./dist/bundle.js",
@@ -26,10 +26,10 @@
     "snap_dialog": {},
     "snap_getBip44Entropy": [
       {
-        "coinType": 354
+        "coinType": 810
       },
       {
-        "coinType": 434
+        "coinType": 809
       }
     ],
     "snap_manageState": {}
