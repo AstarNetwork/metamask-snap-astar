@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   Paper,
   Table,
@@ -9,10 +8,11 @@ import {
   TableRow
 } from '@material-ui/core';
 import { formatBalance } from '@polkadot/util';
-import type { Transaction } from '@chainsafe/metamask-polkadot-types';
-import { shortAddress } from '../../services/format';
+import type { SnapNetworks, Transaction } from '@chainsafe/metamask-polkadot-types';
+import { shortAddress, getCurrency } from '../../services/format';
 
 export interface TransactionTableProps {
+  network: SnapNetworks;
   txs: Transaction[];
 }
 
@@ -43,16 +43,16 @@ export const TransactionTable = (props: TransactionTableProps): React.JSX.Elemen
               <TableCell align="center">{shortAddress(tx.destination)}</TableCell>
               <TableCell align="center">
                 {formatBalance(tx.amount, {
-                  decimals: 12,
+                  decimals: 18,
                   withSi: true,
-                  withUnit: 'KSM'
+                  withUnit: getCurrency(props.network)
                 })}
               </TableCell>
               <TableCell align="center">
                 {formatBalance(tx.fee, {
-                  decimals: 12,
+                  decimals: 18,
                   withSi: true,
-                  withUnit: 'KSM'
+                  withUnit: getCurrency(props.network)
                 })}
               </TableCell>
             </TableRow>

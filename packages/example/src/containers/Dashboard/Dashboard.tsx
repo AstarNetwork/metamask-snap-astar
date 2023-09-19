@@ -99,9 +99,9 @@ export const Dashboard = (): React.JSX.Element => {
             >
               <InputLabel>Network</InputLabel>
               <Select defaultValue={'westend'} onChange={handleNetworkChange}>
-                <MenuItem value={'westend'}>Westend</MenuItem>
-                <MenuItem value={'kusama'}>Kusama</MenuItem>
-                <MenuItem value={'polkadot'}>Polkadot</MenuItem>
+                <MenuItem value={'westend'}>Shibuya</MenuItem>
+                <MenuItem value={'kusama'}>Shiden</MenuItem>
+                <MenuItem value={'polkadot'}>Astar</MenuItem>
               </Select>
             </Box>
             <Grid container spacing={3} alignItems={'stretch'}>
@@ -135,7 +135,7 @@ export const Dashboard = (): React.JSX.Element => {
                 <Card style={{ margin: '1rem 0' }}>
                   <CardHeader title="Account transactions" />
                   <CardContent>
-                    <TransactionTable txs={transactions} />
+                    <TransactionTable network={network} txs={transactions} />
                   </CardContent>
                 </Card>
               </Grid>

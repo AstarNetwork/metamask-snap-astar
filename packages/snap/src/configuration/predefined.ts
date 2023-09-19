@@ -1,36 +1,36 @@
 import type { SnapConfig } from '@chainsafe/metamask-polkadot-types';
 
 export const kusamaConfiguration: SnapConfig = {
-  addressPrefix: 2,
+  addressPrefix: 5,
   networkName: 'kusama',
   unit: {
-    decimals: 12,
+    decimals: 18,
     image: 'https://svgshare.com/i/L3o.svg',
-    symbol: 'KSM'
+    symbol: 'SDN'
   },
-  wsRpcUrl: 'https://kusama-rpc.polkadot.io/'
+  wsRpcUrl: 'https://shiden.api.onfinality.io/public'
 };
 
 export const westendConfiguration: SnapConfig = {
-  addressPrefix: 42,
+  addressPrefix: 5,
   networkName: 'westend',
   unit: {
-    decimals: 12,
+    decimals: 18,
     image: 'https://svgshare.com/i/L2d.svg',
-    symbol: 'WND'
+    symbol: 'SBY'
   },
-  wsRpcUrl: 'https://westend-rpc.polkadot.io/'
+  wsRpcUrl: 'https://shibuya.public.blastapi.io'
 };
 
 export const polkadotConfiguration: SnapConfig = {
-  addressPrefix: 0,
+  addressPrefix: 5,
   networkName: 'polkadot',
   unit: {
-    decimals: 12,
+    decimals: 18,
     image: 'https://polkadot.js.org/apps/static/polkadot-circle.1eea41b2..svg',
-    symbol: 'DOT'
+    symbol: 'ASTR'
   },
-  wsRpcUrl: 'https://rpc.polkadot.io/'
+  wsRpcUrl: 'https://astar.api.onfinality.io/public'
 };
 
 export const defaultConfiguration: SnapConfig = westendConfiguration;
