@@ -7,7 +7,7 @@
     "url": "git+https://github.com/chainsafe/metamask-snap-polkadot.git"
   },
   "source": {
-    "shasum": "HiL4Lsv4+DdkRx7xHijwmQEfPrgYWgt7mQfz5IC/+Bw=",
+    "shasum": "fVrHROE0eFDW4N2n4x90S7GL+HogRmiHU8TFVLhvWnw=",
     "location": {
       "npm": {
         "filePath": "./dist/bundle.js",

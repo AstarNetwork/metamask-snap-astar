@@ -1,6 +1,6 @@
 import chai, { expect } from 'chai';
 import sinonChai from 'sinon-chai';
-import type { SnapConfig } from '@chainsafe/metamask-polkadot-types';
+import type { UnitConfiguration } from '@chainsafe/metamask-polkadot-types';
 import { getConfiguration, getDefaultConfiguration } from '../../../src/configuration';
 import {
   defaultConfiguration,
@@ -10,6 +10,15 @@ import {
 import { EmptyMetamaskState } from '../../../src/interfaces';
 import type { WalletMock } from '../wallet.mock';
 import { getWalletMock } from '../wallet.mock';
+
+type SnapNetworks = 'astar' | 'shiden' | 'shibuya';
+
+interface SnapConfig {
+  networkName: SnapNetworks;
+  wsRpcUrl?: string;
+  addressPrefix?: number;
+  unit?: UnitConfiguration;
+}
 
 chai.use(sinonChai);
 
@@ -50,7 +59,7 @@ describe('Test configuration functions', function () {
     it('should return configuration saved in state"', async function () {
       const customConfiguration: SnapConfig = {
         addressPrefix: 5,
-        networkName: 'westend',
+        networkName: 'shibuya',
         wsRpcUrl: 'url'
       };
       walletStub.request.returns({ config: JSON.stringify(customConfiguration) });

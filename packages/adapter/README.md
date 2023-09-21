@@ -32,7 +32,7 @@ SnapConfig {
   unit?: UnitConfiguration;
 }
 
-SnapNetworks = "polkadot" | "kusama" | "westend";
+SnapNetworks = "astar" | "shiden" | "shibuya";
 
 UnitConfiguration {
   symbol: string;

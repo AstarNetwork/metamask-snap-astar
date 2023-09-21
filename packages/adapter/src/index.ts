@@ -1,16 +1,25 @@
 import '@polkadot/types-augment';
-import type { SnapConfig } from '@chainsafe/metamask-polkadot-types';
+import type { UnitConfiguration } from '@chainsafe/metamask-polkadot-types';
 import { MetamaskPolkadotSnap } from './snap';
 import { hasMetaMask, isMetamaskSnapsSupported, isPolkadotSnapInstalled } from './utils';
 
-const defaultSnapOrigin = 'npm:@chainsafe/polkadot-snap';
+export type SnapNetworks = 'astar' | 'shiden' | 'shibuya';
+
+export interface SnapConfig {
+  networkName: SnapNetworks;
+  wsRpcUrl?: string;
+  addressPrefix?: number;
+  unit?: UnitConfiguration;
+}
+
+const defaultSnapOrigin = 'npm:@astar-network/snap';
 
 export type SnapInstallationParamNames = string;
 
 export * from './extension';
 
 export async function enablePolkadotSnap(
-  config: SnapConfig = { networkName: 'westend' },
+  config: SnapConfig = { networkName: 'shibuya' },
   snapOrigin?: string,
   snapInstallationParams: Record<SnapInstallationParamNames, unknown> = {}
 ): Promise<MetamaskPolkadotSnap> {
@@ -24,7 +33,7 @@ export async function enablePolkadotSnap(
     throw new Error("Current Metamask version doesn't support snaps");
   }
   if (!config.networkName) {
-    config.networkName = 'westend';
+    config.networkName = 'shibuya';
   }
 
   const isInstalled = await isPolkadotSnapInstalled(snapId);

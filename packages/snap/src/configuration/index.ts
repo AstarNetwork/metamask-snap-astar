@@ -1,4 +1,4 @@
-import type { SnapConfig } from '@chainsafe/metamask-polkadot-types';
+import type { UnitConfiguration } from '@chainsafe/metamask-polkadot-types';
 import { getMetamaskState } from '../rpc/getMetamaskState';
 import {
   defaultConfiguration,
@@ -7,16 +7,25 @@ import {
   westendConfiguration
 } from './predefined';
 
+export type SnapNetworks = 'astar' | 'shiden' | 'shibuya';
+
+export interface SnapConfig {
+  networkName: SnapNetworks;
+  wsRpcUrl?: string;
+  addressPrefix?: number;
+  unit?: UnitConfiguration;
+}
+
 export function getDefaultConfiguration(networkName: string): SnapConfig {
   switch (networkName) {
-    case 'polkadot':
-      console.log('Polkadot configuration selected');
+    case 'astar':
+      console.log('Astar configuration selected');
       return polkadotConfiguration;
-    case 'kusama':
-      console.log('Kusama configuration selected');
+    case 'shiden':
+      console.log('Shiden configuration selected');
       return kusamaConfiguration;
-    case 'westend':
-      console.log('Westend configuration selected');
+    case 'shibuya':
+      console.log('Shibuya configuration selected');
       return westendConfiguration;
     default:
       return defaultConfiguration;

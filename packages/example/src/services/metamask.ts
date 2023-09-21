@@ -16,7 +16,7 @@ export const defaultSnapId = 'local:http://localhost:8081';
 export async function installPolkadotSnap(): Promise<boolean> {
   const snapId = process.env.REACT_APP_SNAP_ID ? process.env.REACT_APP_SNAP_ID : defaultSnapId;
   try {
-    await enablePolkadotSnap({ networkName: 'westend' }, snapId);
+    await enablePolkadotSnap({ networkName: 'shibuya' }, snapId);
     console.info('Snap installed!!');
     return true;
   } catch (err) {
@@ -52,7 +52,7 @@ export async function initiatePolkdatodSnap(): Promise<SnapInitializationRespons
 
   try {
     console.info('Attempting to connect to snap...');
-    const metamaskPolkadotSnap = await enablePolkadotSnap({ networkName: 'westend' }, snapId);
+    const metamaskPolkadotSnap = await enablePolkadotSnap({ networkName: 'shibuya' }, snapId);
     console.info('Snap installed!');
     return { isSnapInstalled: true, snap: metamaskPolkadotSnap };
   } catch (e) {

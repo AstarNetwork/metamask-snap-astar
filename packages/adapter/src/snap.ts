@@ -1,4 +1,4 @@
-import type { SnapConfig } from '@chainsafe/metamask-polkadot-types';
+import type { UnitConfiguration } from '@chainsafe/metamask-polkadot-types';
 import {
   exportSeed,
   generateTransactionPayload,
@@ -14,6 +14,15 @@ import {
 } from './methods';
 import type { MetamaskSnapApi } from './types';
 
+export type SnapNetworks = 'astar' | 'shiden' | 'shibuya';
+
+export interface SnapConfig {
+  networkName: SnapNetworks;
+  wsRpcUrl?: string;
+  addressPrefix?: number;
+  unit?: UnitConfiguration;
+}
+
 export class MetamaskPolkadotSnap {
   protected readonly config: SnapConfig;
   //url to package.json
@@ -24,7 +33,7 @@ export class MetamaskPolkadotSnap {
   public constructor(pluginOrigin: string, config: SnapConfig) {
     this.pluginOrigin = pluginOrigin;
     this.snapId = `${this.pluginOrigin}`;
-    this.config = config || { networkName: 'westend' };
+    this.config = config || { networkName: 'shibuya' };
   }
 
   public getMetamaskSnapApi = (): MetamaskSnapApi => {

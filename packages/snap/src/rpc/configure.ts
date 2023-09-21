@@ -1,7 +1,16 @@
 import deepmerge from 'deepmerge';
-import type { SnapConfig } from '@chainsafe/metamask-polkadot-types';
+import type { UnitConfiguration } from '@chainsafe/metamask-polkadot-types';
 import { getDefaultConfiguration } from '../configuration';
 import { getMetamaskState } from './getMetamaskState';
+
+export type SnapNetworks = 'astar' | 'shiden' | 'shibuya';
+
+export interface SnapConfig {
+  networkName: SnapNetworks;
+  wsRpcUrl?: string;
+  addressPrefix?: number;
+  unit?: UnitConfiguration;
+}
 
 export async function configure(networkName: string, overrides: unknown): Promise<SnapConfig> {
   const defaultConfig = getDefaultConfiguration(networkName);

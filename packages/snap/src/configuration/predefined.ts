@@ -1,8 +1,17 @@
-import type { SnapConfig } from '@chainsafe/metamask-polkadot-types';
+import type { UnitConfiguration } from '@chainsafe/metamask-polkadot-types';
+
+export type SnapNetworks = 'astar' | 'shiden' | 'shibuya';
+
+export interface SnapConfig {
+  networkName: SnapNetworks;
+  wsRpcUrl?: string;
+  addressPrefix?: number;
+  unit?: UnitConfiguration;
+}
 
 export const kusamaConfiguration: SnapConfig = {
   addressPrefix: 5,
-  networkName: 'kusama',
+  networkName: 'shiden',
   unit: {
     decimals: 18,
     image: 'https://svgshare.com/i/L3o.svg',
@@ -13,7 +22,7 @@ export const kusamaConfiguration: SnapConfig = {
 
 export const westendConfiguration: SnapConfig = {
   addressPrefix: 5,
-  networkName: 'westend',
+  networkName: 'shibuya',
   unit: {
     decimals: 18,
     image: 'https://svgshare.com/i/L2d.svg',
@@ -24,7 +33,7 @@ export const westendConfiguration: SnapConfig = {
 
 export const polkadotConfiguration: SnapConfig = {
   addressPrefix: 5,
-  networkName: 'polkadot',
+  networkName: 'astar',
   unit: {
     decimals: 18,
     image: 'https://polkadot.js.org/apps/static/polkadot-circle.1eea41b2..svg',

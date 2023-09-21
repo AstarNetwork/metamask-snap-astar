@@ -1,5 +1,5 @@
 import type { Injected, InjectedAccount, InjectedWindow } from '@polkadot/extension-inject/types';
-import type { SnapConfig } from '@chainsafe/metamask-polkadot-types';
+import type { UnitConfiguration } from '@chainsafe/metamask-polkadot-types';
 import type { SignerPayloadJSON, SignerPayloadRaw, SignerResult } from '@polkadot/types/types';
 import type { HexString } from '@polkadot/util/types';
 import { enablePolkadotSnap } from '../index';
@@ -9,14 +9,23 @@ interface Web3Window extends InjectedWindow {
   ethereum: unknown;
 }
 
+export type SnapNetworks = 'astar' | 'shiden' | 'shibuya';
+
+export interface SnapConfig {
+  networkName: SnapNetworks;
+  wsRpcUrl?: string;
+  addressPrefix?: number;
+  unit?: UnitConfiguration;
+}
+
 const config: SnapConfig = {
-  networkName: 'westend'
+  networkName: 'shibuya'
 };
 
 function transformAccounts(accounts: string[]): InjectedAccount[] {
   return accounts.map((address, i) => ({
     address,
-    name: `Polkadot Snap #${i}`,
+    name: `Astar Snap #${i}`,
     type: 'ethereum'
   }));
 }

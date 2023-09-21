@@ -1,16 +1,24 @@
 import chai, { expect } from 'chai';
 import sinonChai from 'sinon-chai';
+import type { UnitConfiguration } from '@chainsafe/metamask-polkadot-types';
 import { kusamaConfiguration, westendConfiguration } from '../../../src/configuration/predefined';
 import { configure } from '../../../src/rpc/configure';
 import { EmptyMetamaskState } from '../../../src/interfaces';
-import { SnapConfig } from '@chainsafe/metamask-polkadot-types';
 import { getWalletMock } from '../wallet.mock';
 
+type SnapNetworks = 'astar' | 'shiden' | 'shibuya';
+
+interface SnapConfig {
+  networkName: SnapNetworks;
+  wsRpcUrl?: string;
+  addressPrefix?: number;
+  unit?: UnitConfiguration;
+}
+
 chai.use(sinonChai);
+const walletStub = getWalletMock();
 
 describe('Test rpc handler function: configure', function () {
-  const walletStub = getWalletMock();
-
   afterEach(function () {
     walletStub.reset();
   });
@@ -37,7 +45,7 @@ describe('Test rpc handler function: configure', function () {
     // stubs
     const customConfiguration: SnapConfig = {
       addressPrefix: 1,
-      networkName: 'westend',
+      networkName: 'shibuya',
       unit: { customViewUrl: 'custom-view-url', decimals: 1, image: 'image', symbol: 'TST' },
       wsRpcUrl: 'ws-rpc-url'
     };

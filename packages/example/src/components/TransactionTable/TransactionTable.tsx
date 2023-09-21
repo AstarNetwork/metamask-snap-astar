@@ -8,8 +8,10 @@ import {
   TableRow
 } from '@material-ui/core';
 import { formatBalance } from '@polkadot/util';
-import type { SnapNetworks, Transaction } from '@chainsafe/metamask-polkadot-types';
+import type { Transaction } from '@chainsafe/metamask-polkadot-types';
 import { shortAddress, getCurrency } from '../../services/format';
+
+export type SnapNetworks = 'astar' | 'shiden' | 'shibuya';
 
 export interface TransactionTableProps {
   network: SnapNetworks;

@@ -11,7 +11,7 @@ import {
   Select,
   Typography
 } from '@material-ui/core';
-import type { BlockInfo, SnapNetworks, Transaction } from '@chainsafe/metamask-polkadot-types';
+import type { BlockInfo, Transaction } from '@chainsafe/metamask-polkadot-types';
 import type { MetamaskSnapApi } from '@chainsafe/metamask-polkadot-adapter/src/types';
 import { Transfer } from '../../components/Transfer/Transfer';
 import { SignMessage } from '../../components/SignMessage/SignMessage';
@@ -20,6 +20,8 @@ import { Account } from '../../components/Account/Account';
 import { MetaMaskConnector } from '../MetaMaskConnector/MetaMaskConnector';
 import { MetaMaskContext } from '../../context/metamask';
 import { LatestBlock } from '../../components/LatestBlock/LatestBlock';
+
+export type SnapNetworks = 'astar' | 'shiden' | 'shibuya';
 
 export const Dashboard = (): React.JSX.Element => {
   const [state] = useContext(MetaMaskContext);
@@ -31,7 +33,7 @@ export const Dashboard = (): React.JSX.Element => {
     number: ''
   });
   const [transactions, setTransactions] = useState<Transaction[]>([]);
-  const [network, setNetwork] = useState<SnapNetworks>('westend');
+  const [network, setNetwork] = useState<SnapNetworks>('shibuya');
   const [api, setApi] = useState<MetamaskSnapApi | null>(null);
 
   const handleNewTransaction = useCallback(async () => {
@@ -98,10 +100,10 @@ export const Dashboard = (): React.JSX.Element => {
               alignContent={'flex-start'}
             >
               <InputLabel>Network</InputLabel>
-              <Select defaultValue={'westend'} onChange={handleNetworkChange}>
-                <MenuItem value={'westend'}>Shibuya</MenuItem>
-                <MenuItem value={'kusama'}>Shiden</MenuItem>
-                <MenuItem value={'polkadot'}>Astar</MenuItem>
+              <Select defaultValue={'shibuya'} onChange={handleNetworkChange}>
+                <MenuItem value={'shibuya'}>Shibuya</MenuItem>
+                <MenuItem value={'shiden'}>Shiden</MenuItem>
+                <MenuItem value={'astar'}>Astar</MenuItem>
               </Select>
             </Box>
             <Grid container spacing={3} alignItems={'stretch'}>
