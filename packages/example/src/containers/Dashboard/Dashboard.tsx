@@ -21,7 +21,7 @@ import { MetaMaskConnector } from '../MetaMaskConnector/MetaMaskConnector';
 import { MetaMaskContext } from '../../context/metamask';
 import { LatestBlock } from '../../components/LatestBlock/LatestBlock';
 
-export type SnapNetworks = 'astar' | 'shiden' | 'shibuya';
+export type SnapNetworks = 'shibuya';
 
 export const Dashboard = (): React.JSX.Element => {
   const [state] = useContext(MetaMaskContext);
@@ -47,6 +47,7 @@ export const Dashboard = (): React.JSX.Element => {
     const networkName = event.target.value as SnapNetworks;
     if (networkName === network) return;
     if (!api) return;
+    /* eslint- disable-next-line @ typescript-eslint/ no-unsafe-assignment, @typescript-eslint/no-explicit-any */
     await api.setConfiguration({ networkName: networkName });
     setNetwork(networkName);
   };
