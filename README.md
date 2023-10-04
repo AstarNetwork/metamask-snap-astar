@@ -1,4 +1,4 @@
-# Metamask <> Polkadot snap
+# Metamask <> Astar snap
 ![](https://github.com/chainsafe/metamask-snap-polkadot/workflows/ci/badge.svg)
 ![](https://img.shields.io/github/issues-raw/chainsafe/metamask-snap-polkadot)
 ![](https://img.shields.io/github/license/chainsafe/metamask-snap-polkadot)

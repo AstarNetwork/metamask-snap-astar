@@ -1,12 +1,11 @@
-# Metamask Polkadot & Substrate Snap
+# Metamask Astar Snap
 
-![](https://github.com/chainsafe/metamask-snap-polkadot/workflows/ci/badge.svg)
-![](https://img.shields.io/github/issues-raw/chainsafe/metamask-snap-polkadot)
-![](https://img.shields.io/github/license/chainsafe/metamask-snap-polkadot)
+![](https://github.com/AstarNetwork/metamask-snap-astar/workflows/ci/badge.svg)
+![](https://img.shields.io/github/issues-raw/AstarNetwork/metamask-snap-astar)
+![](https://img.shields.io/github/license/AstarNetwork/metamask-snap-astar)
 
-This project extends Metamask capabilities to include support for Polkadot,
-Kusama, and other Substrate- and FRAME-based blockchains in the Polkadot
-ecosystem.
+This project extends Metamask capabilities to include support for Astar & Shiden,
+and other Substrate- and FRAME-based blockchains in the Polkadot ecosystem.
 
 ## What are Snaps?
 
