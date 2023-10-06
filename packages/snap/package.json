@@ -1,7 +1,7 @@
 {
-  "name": "@chainsafe/polkadot-snap",
-  "version": "0.7.5",
-  "description": "Metamask snap to interact with Polkadot dapps.",
+  "name": "@astar-network/snap",
+  "version": "0.7.6",
+  "description": "Metamask snap to interact with Astar dapps.",
   "main": "build/index.js",
   "scripts": {
     "lint": "yarn run lint:types && yarn run lint:style",
@@ -31,7 +31,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chainsafe/metamask-snap-polkadot.git"
+    "url": "git+https://github.com/AstarNetwork/metamask-snap-astar.git"
   },
   "keywords": [
     "polkadot",
@@ -41,12 +41,12 @@
     "dapp",
     "wallet"
   ],
-  "author": "ChainSafe <info@chainsafe.io>",
+  "author": "Astar <info@astar.network>",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/chainsafe/metamask-snap-polkadot/issues"
+    "url": "https://github.com/AstarNetwork/metamask-snap-astar/issues"
   },
-  "homepage": "https://github.com/chainsafe/metamask-snap-polkadot#readme",
+  "homepage": "https://github.com/AstarNetwork/metamask-snap-astar#readme",
   "web3Wallet": {
     "bundle": {
       "local": "dist/bundle.js",

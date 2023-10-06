@@ -1,17 +1,17 @@
 {
-  "version": "0.7.5",
+  "version": "0.7.6",
   "description": "The Astar snap.",
   "proposedName": "Astar Wallet",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chainsafe/metamask-snap-polkadot.git"
+    "url": "git+https://github.com/AstarNetwork/metamask-snap-astar.git"
   },
   "source": {
-    "shasum": "fVrHROE0eFDW4N2n4x90S7GL+HogRmiHU8TFVLhvWnw=",
+    "shasum": "hLFgdn9u3+aDIdpCUKey14NQk31ZFx1nJw2Mfzd9a3k=",
     "location": {
       "npm": {
         "filePath": "./dist/bundle.js",
-        "packageName": "@chainsafe/polkadot-snap",
+        "packageName": "@astar-network/snap",
         "registry": "https://registry.npmjs.org/"
       }
     }

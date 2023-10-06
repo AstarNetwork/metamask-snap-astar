@@ -57,7 +57,7 @@ jobs:
       - name: Build
         run: yarn build
         env:
-          REACT_APP_SNAP_ID: 'npm:@chainsafe/polkadot-snap'
+          REACT_APP_SNAP_ID: 'npm:@astar-network/snap'
       - name: Publish to Cloudflare Pages
         uses: cloudflare/pages-action@v1
         with:

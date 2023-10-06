@@ -1,5 +1,7 @@
 # Changelog
 
+## [0.7.6](https://github.com/AstarNetwork/metamask-snap-astar/) Astar
+
 ## [0.7.5](https://github.com/ChainSafe/metamask-snap-polkadot/compare/polkadot-snap-v0.7.4...polkadot-snap-v0.7.5) (2023-09-13)
 
 
