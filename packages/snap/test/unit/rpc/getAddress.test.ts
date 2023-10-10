@@ -14,10 +14,10 @@ describe('Test rpc handler function: getAddress', function () {
     walletStub.reset();
   });
 
-  it('should return valid address with westend configuration', async function () {
+  it('should return valid address with shibuya configuration', async function () {
     walletStub.request.onFirstCall().returns({ configuration: westendConfiguration });
     walletStub.request.onSecondCall().returns({ privateKey: testAppKey });
     const result = await getAddress();
-    expect(result).to.be.eq('5DW5CXHWbM13Az7aetLQVUEviNq8WeXFQanHNPVMmzyRYKvX');
+    expect(result).to.be.eq('XNfdpFbNae9Pp9R9BnXX8QCoRYFUsDzRnHRc6hDeMyP8Snh');
   });
 });

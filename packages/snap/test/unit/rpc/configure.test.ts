@@ -23,19 +23,19 @@ describe('Test rpc handler function: configure', function () {
     walletStub.reset();
   });
 
-  it('should set predefined kusama configuration', async function () {
+  it('should set predefined shiden configuration', async function () {
     walletStub.request.returns(EmptyMetamaskState());
     // tested method
-    const result = await configure('kusama', {});
+    const result = await configure('shiden', {});
 
     // assertions
     expect(result).to.be.deep.eq(kusamaConfiguration);
   });
 
-  it('should set predefined westend configuration', async function () {
+  it('should set predefined shibuya configuration', async function () {
     walletStub.request.returns(EmptyMetamaskState());
     // tested method
-    const result = await configure('westend', {});
+    const result = await configure('shibuya', {});
     // assertions
     expect(result).to.be.deep.eq(westendConfiguration);
   });
@@ -55,12 +55,12 @@ describe('Test rpc handler function: configure', function () {
     expect(result).to.be.deep.eq(customConfiguration);
   });
 
-  it('should set predefined kusama configuration with additional property override', async function () {
+  it('should set predefined shiden configuration with additional property override', async function () {
     walletStub.request.returns(EmptyMetamaskState());
     // tested method
     const customConfiguration = kusamaConfiguration;
     customConfiguration.unit.symbol = 'TST_KSM';
-    const result = await configure('kusama', {
+    const result = await configure('shiden', {
       unit: { symbol: 'TST_KSM' }
     } as SnapConfig);
     // assertions

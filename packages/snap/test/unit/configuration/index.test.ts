@@ -24,13 +24,13 @@ chai.use(sinonChai);
 
 describe('Test configuration functions', function () {
   describe('getDefaultConfiguration', function () {
-    it('should return kusama configuration on "kusama"', function () {
-      const configuration = getDefaultConfiguration('kusama');
+    it('should return shiden configuration on "shiden"', function () {
+      const configuration = getDefaultConfiguration('shiden');
       expect(configuration).to.be.deep.eq(kusamaConfiguration);
     });
 
-    it('should return westend configuration on "westend"', function () {
-      const configuration = getDefaultConfiguration('westend');
+    it('should return shibuya configuration on "shibuya"', function () {
+      const configuration = getDefaultConfiguration('shibuya');
       expect(configuration).to.be.deep.eq(westendConfiguration);
     });
 
