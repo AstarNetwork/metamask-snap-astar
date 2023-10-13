@@ -1,14 +1,14 @@
 {
-  "name": "@chainsafe/metamask-polkadot-adapter",
-  "version": "0.5.1",
+  "name": "@astar-network/metamask-astar-adapter",
+  "version": "0.5.2",
   "main": "./build/index.js",
   "module": "./build/index.js",
   "types": "./build/index.d.ts",
-  "author": "ChainSafe <info@chainsafe.io>",
+  "author": "Astar Network <info@astar.network>",
   "license": "Apache-2.0",
-  "homepage": "https://github.com/chainsafe/metamask-snap-polkadot/tree/master/packages/adapter",
+  "homepage": "https://github.com/AstarNetwork/metamask-snap-astar/tree/astar/packages/adapter",
   "keywords": [
-    "polkadot",
+    "astar",
     "metamask",
     "snap",
     "substrate"
