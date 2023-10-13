@@ -26,11 +26,5 @@ Learn more about snaps from the
 
 ## Documentation
 
-Go to the [wiki](https://github.com/chainsafe/metamask-snap-polkadot/wiki) to
-learn morea about using this snap.
-
-The wiki also describes the
-[integration process](https://github.com/chainsafe/metamask-snap-polkadot/wiki#integration)
-and provides full
-[API documentation](https://github.com/chainsafe/metamask-snap-polkadot/wiki/API-Documentation)
+[Astar documentation](https://docs.astar.network/docs/build/)
 for dApp developers.

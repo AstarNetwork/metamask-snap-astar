@@ -1,4 +1,4 @@
-import type { UnitConfiguration } from '@chainsafe/metamask-polkadot-types';
+import type { UnitConfiguration } from '@astar-network/metamask-astar-types';
 
 export type SnapNetworks = 'astar' | 'shiden' | 'shibuya';
 

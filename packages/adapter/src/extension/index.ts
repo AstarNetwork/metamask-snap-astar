@@ -1,5 +1,5 @@
 import type { Injected, InjectedAccount, InjectedWindow } from '@polkadot/extension-inject/types';
-import type { UnitConfiguration } from '@chainsafe/metamask-polkadot-types';
+import type { UnitConfiguration } from '@astar-network/metamask-astar-types';
 import type { SignerPayloadJSON, SignerPayloadRaw, SignerResult } from '@polkadot/types/types';
 import type { HexString } from '@polkadot/util/types';
 import { enablePolkadotSnap } from '../index';

@@ -1,6 +1,6 @@
 import chai, { expect } from 'chai';
 import sinonChai from 'sinon-chai';
-import type { UnitConfiguration } from '@chainsafe/metamask-polkadot-types';
+import type { UnitConfiguration } from '@astar-network/metamask-astar-types';
 import { getConfiguration, getDefaultConfiguration } from '../../../src/configuration';
 import {
   defaultConfiguration,

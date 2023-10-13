@@ -1,5 +1,5 @@
 import '@polkadot/types-augment';
-import type { UnitConfiguration } from '@chainsafe/metamask-polkadot-types';
+import type { UnitConfiguration } from '@astar-network/metamask-astar-types';
 import { MetamaskPolkadotSnap } from './snap';
 import { hasMetaMask, isMetamaskSnapsSupported, isPolkadotSnapInstalled } from './utils';
 
