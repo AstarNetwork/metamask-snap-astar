@@ -1,6 +1,6 @@
 import type { Dispatch, PropsWithChildren, Reducer } from 'react';
 import React, { createContext, useReducer } from 'react';
-import type { MetamaskPolkadotSnap } from '@chainsafe/metamask-polkadot-adapter/build/snap';
+import type { MetamaskPolkadotSnap } from '@astar-network/metamask-astar-adapter/build/snap';
 import { hasMetaMask } from '../services/metamask';
 
 interface IPolkadotSnap {

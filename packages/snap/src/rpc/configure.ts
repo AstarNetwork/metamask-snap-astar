@@ -1,5 +1,5 @@
 import deepmerge from 'deepmerge';
-import type { UnitConfiguration } from '@chainsafe/metamask-polkadot-types';
+import type { UnitConfiguration } from '@astar-network/metamask-astar-types';
 import { getDefaultConfiguration } from '../configuration';
 import { getMetamaskState } from './getMetamaskState';
 

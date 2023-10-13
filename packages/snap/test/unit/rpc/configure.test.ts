@@ -1,6 +1,6 @@
 import chai, { expect } from 'chai';
 import sinonChai from 'sinon-chai';
-import type { UnitConfiguration } from '@chainsafe/metamask-polkadot-types';
+import type { UnitConfiguration } from '@astar-network/metamask-astar-types';
 import { kusamaConfiguration, westendConfiguration } from '../../../src/configuration/predefined';
 import { configure } from '../../../src/rpc/configure';
 import { EmptyMetamaskState } from '../../../src/interfaces';

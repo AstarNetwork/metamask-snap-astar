@@ -1,4 +1,4 @@
-import type { UnitConfiguration } from '@chainsafe/metamask-polkadot-types';
+import type { UnitConfiguration } from '@astar-network/metamask-astar-types';
 import { getMetamaskState } from '../rpc/getMetamaskState';
 import {
   defaultConfiguration,

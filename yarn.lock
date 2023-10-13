@@ -34,6 +34,22 @@
     jsonpointer "^5.0.0"
     leven "^3.1.0"
 
+"@astar-network/metamask-astar-adapter@workspace:^":
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/@astar-network/metamask-astar-adapter/-/metamask-astar-adapter-0.5.2.tgz#eccd3dc5582583b9e9428bfcd253766b0b89e307"
+  integrity sha512-VfWWrxo27kD2Sjni0O5yWVCMQgz9suJmMPOyP3LjT9dFJDkLH0OQBkOlBcs1lBg+Sz6jt/XO/C8vn0lwWmP1yg==
+  dependencies:
+    "@polkadot/api" "^10.9.1"
+    "@polkadot/extension-inject" "^0.46.5"
+    "@polkadot/types-augment" "^10.9.1"
+
+"@astar-network/metamask-astar-types@workspace:^":
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/@astar-network/metamask-astar-types/-/metamask-astar-types-0.6.1.tgz#926bf394dbf37ab66474ad3d294d496b0b366769"
+  integrity sha512-DU8KKdBiJazHv/Zm9PV3Gu1L+8D7kNmlFuX0DljU9SInhIxvqRhvj8P23illUPY47b9W0cV5SetGtoLf/RQzgg==
+  dependencies:
+    "@polkadot/api" "^10.9.1"
+
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.10.4", "@babel/code-frame@^7.12.13", "@babel/code-frame@^7.16.0", "@babel/code-frame@^7.22.13", "@babel/code-frame@^7.8.3":
   version "7.22.13"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.22.13.tgz#e3c1c099402598483b7a8c46a721d1038803755e"
@@ -1178,22 +1194,6 @@
     eslint-plugin-mocha "^10.1.0"
     eslint-plugin-prettier "^5.0.0"
     prettier "^3.0.2"
-
-"@chainsafe/metamask-polkadot-adapter@workspace:^":
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/@chainsafe/metamask-polkadot-adapter/-/metamask-polkadot-adapter-0.5.1.tgz#04ecf78ce6cdcc63ebdc2c97f67d0c1efdb8bee8"
-  integrity sha512-t3/KoGTgayt2qQOmEWj5Gx8UVvqjhEuybMYadInWsvsDvmyhSKUxzGC8JlUSr4ww0Fa8Dzem21Hxo0FT9rxjyg==
-  dependencies:
-    "@polkadot/api" "^10.9.1"
-    "@polkadot/extension-inject" "^0.46.5"
-    "@polkadot/types-augment" "^10.9.1"
-
-"@chainsafe/metamask-polkadot-types@workspace:^":
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/@chainsafe/metamask-polkadot-types/-/metamask-polkadot-types-0.6.0.tgz#e6e950024c363e076ba6727c3b1b8b57eb6c29b0"
-  integrity sha512-DhLNF2LcybGMOs3aBMh5iIAqEw0/a2W6mb5FccOGVTYQqT6W/lcwKC5Ves4KmpGbH/DtNJdbC0L9YMS0F8bXEg==
-  dependencies:
-    "@polkadot/api" "^10.9.1"
 
 "@csstools/normalize.css@*":
   version "12.0.0"

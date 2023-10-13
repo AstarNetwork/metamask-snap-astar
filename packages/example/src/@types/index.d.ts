@@ -1,6 +1,6 @@
-import type { SnapConfig } from '@chainsafe/metamask-polkadot-types';
+import type { SnapConfig } from '@astar-network/metamask-astar-types';
 
-declare module '@chainsafe/metamask-polkadot-adapter' {
+declare module '@astar-network/metamask-astar-adapter' {
   export function injectMetamaskPolkadotSnapProvider(
     network: 'westend' | 'kusama',
     config?: SnapConfig,
