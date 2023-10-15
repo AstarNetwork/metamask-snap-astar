@@ -1,6 +1,6 @@
 {
   "name": "@astar-network/metamask-astar-adapter",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "main": "./build/index.js",
   "module": "./build/index.js",
   "types": "./build/index.d.ts",

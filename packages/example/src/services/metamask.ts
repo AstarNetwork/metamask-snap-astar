@@ -1,7 +1,7 @@
-import { web3EnablePromise, web3Enable } from '@polkadot/extension-dapp';
+import { web3EnablePromise } from '@polkadot/extension-dapp';
 import type { InjectedMetamaskExtension } from '@astar-network/metamask-astar-adapter/src/types';
 import type { InjectedExtension } from '@polkadot/extension-inject/types';
-import { enablePolkadotSnap, initPolkadotSnap } from '@astar-network/metamask-astar-adapter';
+import { enablePolkadotSnap } from '@astar-network/metamask-astar-adapter';
 import type { MetamaskPolkadotSnap } from '@astar-network/metamask-astar-adapter/build/snap';
 
 export function hasMetaMask(): boolean {
