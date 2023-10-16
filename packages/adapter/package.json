@@ -1,6 +1,6 @@
 {
   "name": "@astar-network/metamask-astar-adapter",
-  "version": "0.5.3",
+  "version": "0.5.4",
   "main": "./build/index.js",
   "module": "./build/index.js",
   "types": "./build/index.d.ts",
@@ -16,6 +16,11 @@
   "publishConfig": {
     "access": "public"
   },
+  "files": [
+    "build/*",
+    "src/*",
+    "tsconfig.json"
+  ],  
   "dependencies": {
     "@polkadot/api": "^10.9.1",
     "@polkadot/extension-inject": "^0.46.5",
