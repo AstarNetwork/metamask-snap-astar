@@ -130,7 +130,6 @@ describe('Test rpc handler function: getBlock', function () {
       '0xc9fb400866641ca80ef3e760d904fe15a8c9eda6ff1bd769b0628e26e82d5c75'
     );
     expect(result.number).to.be.eq('10');
-    expect(result).not.to.be.null;
     expect(apiStub.rpc.chain.getHeader).to.have.been.calledOnce;
 
     expect(apiStub.rpc.chain.getBlock).to.have.been.calledOnceWith(
