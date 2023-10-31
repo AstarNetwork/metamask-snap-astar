@@ -20,7 +20,7 @@ export async function getKeyPair(): Promise<KeyringPair> {
   })) as JsonBIP44CoinTypeNode;
 
   // generate keys
-  const seed = bip44Node.privateKey.slice(0, 32);
+  const seed = bip44Node.privateKey?.slice(0, 32);
   const ss58Format = config.addressPrefix;
   const keyring = new Keyring({ ss58Format });
 

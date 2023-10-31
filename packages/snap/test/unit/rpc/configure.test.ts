@@ -59,7 +59,9 @@ describe('Test rpc handler function: configure', function () {
     walletStub.request.returns(EmptyMetamaskState());
     // tested method
     const customConfiguration = kusamaConfiguration;
-    customConfiguration.unit.symbol = 'TST_KSM';
+    if (customConfiguration.unit) {
+      customConfiguration.unit.symbol = 'TST_KSM';
+    }
     const result = await configure('shiden', {
       unit: { symbol: 'TST_KSM' }
     } as SnapConfig);

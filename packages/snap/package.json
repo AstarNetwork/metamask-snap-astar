@@ -74,7 +74,7 @@
     "tsconfig.build.json"
   ], 
   "devDependencies": {
-    "@astar-network/metamask-astar-types": "workspace:^",
+    "@astar-network/metamask-astar-types": "workspace:^0.6.1",
     "@metamask/snaps-cli": "^1.0.2",
     "@types/chai": "^4.2.10",
     "@types/mocha": "^10.0.1",

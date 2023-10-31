@@ -3,8 +3,8 @@
   "version": "0.1.1",
   "private": false,
   "dependencies": {
-    "@astar-network/metamask-astar-adapter": "workspace:^",
-    "@astar-network/metamask-astar-types": "workspace:^",
+    "@astar-network/metamask-astar-adapter": "workspace:^0.5.4",
+    "@astar-network/metamask-astar-types": "workspace:^0.6.1",
     "@material-ui/core": "^4.12.4",
     "@material-ui/icons": "^4.11.3",
     "@material-ui/lab": "latest",

@@ -20,7 +20,7 @@
     "skipLibCheck": true,
     "target": "ES2020",
     "baseUrl": ".",
-    "strictNullChecks": false,
+    "strictNullChecks": true,
     "paths": {
       "*": [
         "../../node_modules"

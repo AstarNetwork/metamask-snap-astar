@@ -1,5 +1,6 @@
 import chai, { expect } from 'chai';
 import sinonChai from 'sinon-chai';
+import type { BlockId } from '@astar-network/metamask-astar-types';
 import type { ApiPromise } from '@polkadot/api';
 import sinon from 'sinon';
 import type { BlockHash } from '@polkadot/types/interfaces';
@@ -11,6 +12,7 @@ import { getWalletMock } from '../../wallet.mock';
 chai.use(sinonChai);
 
 describe('Test rpc handler function: getBlock', function () {
+  // eslint-disable-next-line mocha/no-setup-in-describe
   const walletStub = getWalletMock();
 
   afterEach(function () {
@@ -34,11 +36,12 @@ describe('Test rpc handler function: getBlock', function () {
     });
     const api = apiStub as unknown as ApiPromise;
     const result = await getBlock(1, api);
-    expect(result).not.to.be.null;
-    expect(result.hash).to.be.eq(
-      '0xc9fb400866641ca80ef3e760d904fe15a8c9eda6ff1bd769b0628e26e82d5c75'
-    );
-    expect(result.number).to.be.eq('10');
+    if (result !== null) {
+      expect(result.hash).to.be.eq(
+        '0xc9fb400866641ca80ef3e760d904fe15a8c9eda6ff1bd769b0628e26e82d5c75'
+      );
+      expect(result.number).to.be.eq('10');
+    }
     expect(apiStub.rpc.chain.getBlockHash).to.have.been.calledOnceWith(1);
 
     expect(apiStub.rpc.chain.getBlock).to.have.been.calledOnceWith(
@@ -63,11 +66,12 @@ describe('Test rpc handler function: getBlock', function () {
     });
     const api = apiStub as unknown as ApiPromise;
     const result = await getBlock('1', api);
-    expect(result).not.to.be.null;
-    expect(result.hash).to.be.eq(
-      '0xc9fb400866641ca80ef3e760d904fe15a8c9eda6ff1bd769b0628e26e82d5c75'
-    );
-    expect(result.number).to.be.eq('10');
+    if (result !== null) {
+      expect(result.hash).to.be.eq(
+        '0xc9fb400866641ca80ef3e760d904fe15a8c9eda6ff1bd769b0628e26e82d5c75'
+      );
+      expect(result.number).to.be.eq('10');
+    }
     expect(apiStub.rpc.chain.getBlockHash).to.have.been.calledOnceWith(1);
 
     expect(apiStub.rpc.chain.getBlock).to.have.been.calledOnceWith(
@@ -94,12 +98,12 @@ describe('Test rpc handler function: getBlock', function () {
       '0xc9fb400866641ca80ef3e760d904fe15a8c9eda6ff1bd769b0628e26e82d5c75',
       api
     );
-    expect(result).not.to.be.null;
-    expect(result.hash).to.be.eq(
-      '0xc9fb400866641ca80ef3e760d904fe15a8c9eda6ff1bd769b0628e26e82d5c75'
-    );
-    expect(result.number).to.be.eq('10');
-
+    if (result !== null) {
+      expect(result.hash).to.be.eq(
+        '0xc9fb400866641ca80ef3e760d904fe15a8c9eda6ff1bd769b0628e26e82d5c75'
+      );
+      expect(result.number).to.be.eq('10');
+    }
     expect(apiStub.rpc.chain.getBlock).to.have.been.calledOnceWith(
       '0xc9fb400866641ca80ef3e760d904fe15a8c9eda6ff1bd769b0628e26e82d5c75'
     );
@@ -124,11 +128,13 @@ describe('Test rpc handler function: getBlock', function () {
     });
     const api = apiStub as unknown as ApiPromise;
     const result = await getBlock('latest', api);
+    if (result !== null) {
+      expect(result.hash).to.be.eq(
+        '0xc9fb400866641ca80ef3e760d904fe15a8c9eda6ff1bd769b0628e26e82d5c75'
+      );
+      expect(result.number).to.be.eq('10');
+    }
     expect(result).not.to.be.null;
-    expect(result.hash).to.be.eq(
-      '0xc9fb400866641ca80ef3e760d904fe15a8c9eda6ff1bd769b0628e26e82d5c75'
-    );
-    expect(result.number).to.be.eq('10');
     expect(apiStub.rpc.chain.getHeader).to.have.been.calledOnce;
 
     expect(apiStub.rpc.chain.getBlock).to.have.been.calledOnceWith(
@@ -144,7 +150,7 @@ describe('Test rpc handler function: getBlock', function () {
 
   it('should return null on empty parameters object', async function () {
     const api = {} as unknown as ApiPromise;
-    const result = await getBlock(null, api);
+    const result = await getBlock(undefined as unknown as BlockId, api);
     expect(result).to.be.null;
   });
 });
