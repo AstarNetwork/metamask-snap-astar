@@ -14,7 +14,7 @@ export interface SnapConfig {
 
 export async function configure(networkName: string, overrides: unknown): Promise<SnapConfig> {
   const defaultConfig = getDefaultConfiguration(networkName);
-  const configuration = deepmerge(defaultConfig, overrides as Partial<SnapConfig>);
+  const configuration = deepmerge(defaultConfig, overrides) as SnapConfig;
 
   const state = await getMetamaskState();
   console.info('Current state', state);

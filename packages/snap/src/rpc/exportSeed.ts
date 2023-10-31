@@ -27,7 +27,7 @@ export async function exportSeed(): Promise<string | null> {
       method: 'snap_getBip44Entropy',
       params: { coinType: astarCoinType }
     })) as JsonBIP44CoinTypeNode;
-    return bip44Node?.privateKey?.slice(0, 32) ?? null;
+    return bip44Node.privateKey.slice(0, 32);
   }
   return null;
 }

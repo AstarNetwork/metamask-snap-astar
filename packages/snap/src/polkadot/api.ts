@@ -29,8 +29,8 @@ export const resetApi = async (): Promise<void> => {
     } catch (e) {
       console.error('Error on api disconnect.');
     }
-    api = await ApiPromise.create();
-    provider = new HttpProvider('');
+    api = null;
+    provider = null;
   }
 };
 
@@ -41,7 +41,7 @@ export const getApi = async (): Promise<ApiPromise> => {
     const config = await getConfiguration();
     console.info('Config API', config);
     console.info('Connecting to', config.wsRpcUrl);
-    api = config.wsRpcUrl ? await initApi(config.wsRpcUrl) : await ApiPromise.create();
+    api = await initApi(config.wsRpcUrl);
     console.info('API', api);
     isConnecting = false;
   } else {

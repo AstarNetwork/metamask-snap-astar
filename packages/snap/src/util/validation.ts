@@ -1,5 +1,5 @@
-import type { BlockId } from '@astar-network/metamask-astar-types';
-import type { SignerPayloadRaw } from '@polkadot/types/types';
+import type { BlockId, TxPayload } from '@astar-network/metamask-astar-types';
+import type { SignerPayloadJSON, SignerPayloadRaw } from '@polkadot/types/types';
 import type { Describe } from 'superstruct';
 import { array, enums, number, object, optional, string, type, union } from 'superstruct';
 
@@ -18,7 +18,11 @@ const SignaturePayloadJSONSchema = type({
   version: number()
 });
 
-export const validSignPayloadJSONSchema = SignaturePayloadJSONSchema;
+export const validSignPayloadJSONSchema: Describe<{
+  payload: SignerPayloadJSON;
+}> = object({
+  payload: SignaturePayloadJSONSchema
+});
 
 export type SignPayloadRawTypes = 'bytes' | 'payload';
 export const SignPayloadRawTypesSchema: Describe<SignPayloadRawTypes> = enums(['bytes', 'payload']);
@@ -39,16 +43,16 @@ export const validGetBlockSchema: Describe<{ blockTag: BlockId }> = object({
 
 export const validConfigureSchema: Describe<{
   configuration: {
-    addressPrefix?: number;
+    addressPrefix: number;
     networkName: string;
     unit: { image: string; symbol: string };
-    wsRpcUrl?: string;
+    wsRpcUrl: string;
   };
 }> = object({
   configuration: object({
     addressPrefix: optional(number()),
     networkName: string(),
-    unit: object({ image: string(), symbol: string() }),
+    unit: optional(object({ image: string(), symbol: string() })),
     wsRpcUrl: optional(string())
   })
 });
@@ -63,27 +67,11 @@ export const validGenerateTransactionPayloadSchema: Describe<{
 
 export const validSendSchema: Describe<{
   signature: string;
-  txPayload: {
-    tx: string;
-    payload: {
-      address: string;
-      blockHash: string;
-      blockNumber: string;
-      era: string;
-      genesisHash: string;
-      method: string;
-      nonce: string;
-      signedExtensions: string[];
-      specVersion: string;
-      tip: string;
-      transactionVersion: string;
-      version: number;
-    };
-  };
+  txPayload: TxPayload;
 }> = object({
   signature: string(),
   txPayload: object({
-    tx: string(),
-    payload: SignaturePayloadJSONSchema
+    payload: SignaturePayloadJSONSchema,
+    tx: string()
   })
 });

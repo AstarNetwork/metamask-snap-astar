@@ -1,5 +1,4 @@
-import { ApiPromise } from '@polkadot/api';
-import type { SignerPayloadJSON } from '@polkadot/types/types';
+import type { ApiPromise } from '@polkadot/api/promise';
 import type { TxPayload } from '@astar-network/metamask-astar-types';
 import type { OnRpcRequestHandler } from '@metamask/snaps-types';
 import { assert } from 'superstruct';
@@ -49,7 +48,7 @@ export const onRpcRequest: OnRpcRequestHandler = async ({ request }) => {
     });
   }
   // fetch api promise
-  let api = await ApiPromise.create();
+  let api: ApiPromise = null;
   if (apiDependentMethods.includes(request.method)) {
     api = await getApi();
   }
@@ -57,12 +56,7 @@ export const onRpcRequest: OnRpcRequestHandler = async ({ request }) => {
   switch (request.method) {
     case 'signPayloadJSON':
       assert(request.params, validSignPayloadJSONSchema);
-      if ('payload' in request.params) {
-        const payload = request.params.payload as SignerPayloadJSON;
-        return await signPayloadJSON(api, payload);
-      } else {
-        throw new Error('Invalid request - payload is missing');
-      }
+      return await signPayloadJSON(api, request.params.payload);
     case 'signPayloadRaw':
       assert(request.params, validSignPayloadRawSchema);
       return await signPayloadRaw(api, request.params.payload);
