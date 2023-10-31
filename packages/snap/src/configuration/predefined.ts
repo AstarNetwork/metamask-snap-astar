@@ -36,7 +36,7 @@ export const polkadotConfiguration: SnapConfig = {
   networkName: 'astar',
   unit: {
     decimals: 18,
-    image: 'https://polkadot.js.org/apps/static/polkadot-circle.1eea41b2..svg',
+    image: 'https://svgshare.com/i/zAE.svg',
     symbol: 'ASTR'
   },
   wsRpcUrl: 'https://astar.api.onfinality.io/public'
