@@ -7,7 +7,7 @@
     "url": "git+https://github.com/AstarNetwork/metamask-snap-astar.git"
   },
   "source": {
-    "shasum": "virkLODaqBe5JQhDMtMuniTbdmvJxyTQ9ivKPaMzpOI=",
+    "shasum": "cxsvZsdg8krtAqp4N2D/GrO6He8GmBfwb/YtQ9nebr0=",
     "location": {
       "npm": {
         "filePath": "./dist/bundle.js",
