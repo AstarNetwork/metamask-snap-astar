@@ -1,5 +1,4 @@
 import type { ApiPromise } from '@polkadot/api/promise';
-import type { TxPayload } from '@astar-network/metamask-astar-types';
 import type { OnRpcRequestHandler } from '@metamask/snaps-types';
 import { assert } from 'superstruct';
 import type { MetamaskState } from './interfaces';
@@ -106,7 +105,7 @@ export const onRpcRequest: OnRpcRequestHandler = async ({ request }) => {
       return await send(
         api,
         request.params.signature as Uint8Array | `0x${string}`,
-        request.params.txPayload as TxPayload
+        request.params.txPayload
       );
     case 'getChainHead':
       return api && (await api.rpc.chain.getFinalizedHead()).hash;

@@ -34,7 +34,7 @@
     jsonpointer "^5.0.0"
     leven "^3.1.0"
 
-"@astar-network/metamask-astar-adapter@workspace:^0.5.4":
+"@astar-network/metamask-astar-adapter@workspace:^":
   version "0.5.4"
   resolved "https://registry.yarnpkg.com/@astar-network/metamask-astar-adapter/-/metamask-astar-adapter-0.5.4.tgz#41529d6a8a0af4d7f75401db36b30f153a903d41"
   integrity sha512-8vSvzeEIUVQ2AraStytBx0QX0PPuu8jY6jLhU1N+Bp+Iw0lWWfxSo4UyNeKEWKFaq0KZnJTgD/uf21NqjwCB/A==
@@ -43,7 +43,7 @@
     "@polkadot/extension-inject" "^0.46.5"
     "@polkadot/types-augment" "^10.9.1"
 
-"@astar-network/metamask-astar-types@workspace:^0.6.1":
+"@astar-network/metamask-astar-types@workspace:^":
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/@astar-network/metamask-astar-types/-/metamask-astar-types-0.6.1.tgz#926bf394dbf37ab66474ad3d294d496b0b366769"
   integrity sha512-DU8KKdBiJazHv/Zm9PV3Gu1L+8D7kNmlFuX0DljU9SInhIxvqRhvj8P23illUPY47b9W0cV5SetGtoLf/RQzgg==
