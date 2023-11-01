@@ -18,6 +18,8 @@ const SignaturePayloadJSONSchema = type({
   version: number()
 });
 
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore TS2322
 export const validSignPayloadJSONSchema: Describe<{
   payload: SignerPayloadJSON;
 }> = object({
@@ -65,6 +67,8 @@ export const validGenerateTransactionPayloadSchema: Describe<{
   to: string()
 });
 
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore TS2322
 export const validSendSchema: Describe<{
   signature: string;
   txPayload: TxPayload;

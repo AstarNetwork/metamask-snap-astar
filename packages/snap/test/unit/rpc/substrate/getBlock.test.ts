@@ -11,6 +11,7 @@ import { getWalletMock } from '../../wallet.mock';
 chai.use(sinonChai);
 
 describe('Test rpc handler function: getBlock', function () {
+  // eslint-disable-next-line mocha/no-setup-in-describe
   const walletStub = getWalletMock();
 
   afterEach(function () {

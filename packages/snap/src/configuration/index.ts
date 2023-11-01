@@ -35,7 +35,7 @@ export function getDefaultConfiguration(networkName: string): SnapConfig {
 export async function getConfiguration(): Promise<SnapConfig> {
   const state = await getMetamaskState();
 
-  if (!state || !state.config) {
+  if (!state?.config) {
     return defaultConfiguration;
   }
   return JSON.parse(<string>state.config) as SnapConfig;

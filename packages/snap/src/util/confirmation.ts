@@ -1,4 +1,4 @@
-import { panel, text } from '@metamask/snaps-ui';
+import { panel, heading, text } from '@metamask/snaps-ui';
 
 type ConfirmationDialogContent = {
   prompt: string;
@@ -11,7 +11,7 @@ export async function showConfirmationDialog(message: ConfirmationDialogContent)
     method: 'snap_dialog',
     params: {
       content: panel([
-        text(message.prompt || 'Are you sure?'),
+        heading(message.prompt || 'Are you sure?'),
         text(message.description || ''),
         text(message.textAreaContent || '')
       ]),
