@@ -1,5 +1,5 @@
 {
-  "version": "0.7.8",
+  "version": "0.7.9",
   "description": "The Astar snap.",
   "proposedName": "Astar Wallet",
   "repository": {
@@ -7,7 +7,7 @@
     "url": "git+https://github.com/AstarNetwork/metamask-snap-astar.git"
   },
   "source": {
-    "shasum": "WKUl4ri8gk3KmYMxUJ83DkUHpUBTO+gALBOmTZvGWC0=",
+    "shasum": "virkLODaqBe5JQhDMtMuniTbdmvJxyTQ9ivKPaMzpOI=",
     "location": {
       "npm": {
         "filePath": "./dist/bundle.js",
