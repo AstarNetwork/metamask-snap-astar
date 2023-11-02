@@ -1,15 +1,16 @@
 import chai, { expect } from 'chai';
 import sinonChai from 'sinon-chai';
+import { panel, heading, text } from '@metamask/snaps-ui';
 import { showConfirmationDialog } from '../../../src/util/confirmation';
-import { panel, text } from '@metamask/snaps-ui';
 import { getWalletMock } from '../wallet.mock';
 
 chai.use(sinonChai);
 
 describe('Test showConfirmationDialog', function () {
+  // eslint-disable-next-line mocha/no-setup-in-describe
   const walletStub = getWalletMock();
 
-  afterEach(() => {
+  afterEach(function () {
     walletStub.reset();
   });
 
@@ -23,7 +24,7 @@ describe('Test showConfirmationDialog', function () {
     expect(walletStub.request).to.have.been.calledOnceWith({
       method: 'snap_dialog',
       params: {
-        content: panel([text('confirmation'), text('description'), text('textAreaContent')]),
+        content: panel([heading('confirmation'), text('description'), text('textAreaContent')]),
         type: 'confirmation'
       }
     });
@@ -35,7 +36,7 @@ describe('Test showConfirmationDialog', function () {
     expect(walletStub.request).to.have.been.calledOnceWith({
       method: 'snap_dialog',
       params: {
-        content: panel([text('confirmation'), text(''), text('')]),
+        content: panel([heading('confirmation'), text(''), text('')]),
         type: 'confirmation'
       }
     });
