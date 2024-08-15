@@ -1,39 +1,39 @@
 {
-  "version": "0.7.9",
-  "description": "The Astar snap.",
-  "proposedName": "Astar Wallet",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AstarNetwork/metamask-snap-astar.git"
-  },
-  "source": {
-    "shasum": "cxsvZsdg8krtAqp4N2D/GrO6He8GmBfwb/YtQ9nebr0=",
-    "location": {
-      "npm": {
-        "filePath": "./dist/bundle.js",
-        "iconPath": "images/logo.svg",
-        "packageName": "@astar-network/snap",
-        "registry": "https://registry.npmjs.org/"
-      }
-    }
-  },
-  "initialPermissions": {
-    "endowment:rpc": {
-      "dapps": true,
-      "snaps": true
-    },
-    "endowment:network-access": {},
-    "endowment:webassembly": {},
-    "snap_dialog": {},
-    "snap_getBip44Entropy": [
-      {
-        "coinType": 810
-      },
-      {
-        "coinType": 809
-      }
-    ],
-    "snap_manageState": {}
-  },
-  "manifestVersion": "0.1"
+	"version": "0.8.0",
+	"description": "The Astar snap.",
+	"proposedName": "Astar Wallet",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/AstarNetwork/metamask-snap-astar.git"
+	},
+	"source": {
+		"shasum": "E8Fpa73vhnHE2KKMVbwY3Yr2/XnYKuEE4Hp3hF84px8=",
+		"location": {
+			"npm": {
+				"filePath": "./dist/bundle.js",
+				"iconPath": "images/logo.svg",
+				"packageName": "@astar-network/snap",
+				"registry": "https://registry.npmjs.org/"
+			}
+		}
+	},
+	"initialPermissions": {
+		"endowment:rpc": {
+			"dapps": true,
+			"snaps": true
+		},
+		"endowment:network-access": {},
+		"endowment:webassembly": {},
+		"snap_dialog": {},
+		"snap_getBip44Entropy": [
+			{
+				"coinType": 810
+			},
+			{
+				"coinType": 809
+			}
+		],
+		"snap_manageState": {}
+	},
+	"manifestVersion": "0.1"
 }
