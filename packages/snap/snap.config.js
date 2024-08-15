@@ -7,4 +7,7 @@ module.exports = {
 	server: {
 		port: 8081,
 	},
+	polyfills: {
+		buffer: true,
+	},
 };

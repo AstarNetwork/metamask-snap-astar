@@ -1,6 +1,6 @@
 {
 	"name": "@astar-network/snap",
-	"version": "0.8.0",
+	"version": "0.8.1",
 	"description": "Metamask snap to interact with Astar dapps.",
 	"main": "build/index.js",
 	"scripts": {
