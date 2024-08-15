@@ -1,6 +1,6 @@
+import type { TxPayload } from "@astar-network/metamask-astar-types";
 import type { ApiPromise } from '@polkadot/api/';
-import type { SubmittableExtrinsic } from '@polkadot/api/types';
-import type { TxPayload } from '@astar-network/metamask-astar-types';
+import type { SubmittableExtrinsic } from "@polkadot/api/types";
 import { getAddress } from './getAddress';
 
 export async function generateTransactionPayload(
@@ -21,7 +21,8 @@ export async function generateTransactionPayload(
     nonce
   };
   // define transaction method
-  const transaction: SubmittableExtrinsic<'promise'> = api.tx.balances.transfer(to, amount);
+		const transaction: SubmittableExtrinsic<"promise"> =
+			api.tx.balances.transferKeepAlive(to, amount);
 
   // create SignerPayload
   const signerPayload = api.createType('SignerPayload', {

@@ -1,5 +1,5 @@
-import type { ApiPromise } from '@polkadot/api';
 import type { Transaction, TxPayload } from '@astar-network/metamask-astar-types';
+import type { ApiPromise } from "@polkadot/api";
 import { saveTxToState } from '../polkadot/tx';
 import { getAddress } from './getAddress';
 
@@ -16,8 +16,8 @@ export async function send(
 
   const amount = extrinsic.args[1].toJSON();
   const paymentInfo = await api.tx.balances
-    .transfer(destination, String(amount))
-    .paymentInfo(sender);
+			.transferKeepAlive(destination, String(amount))
+			.paymentInfo(sender);
 
   const txHash = await api.rpc.author.submitExtrinsic(extrinsic);
 
