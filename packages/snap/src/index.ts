@@ -1,5 +1,5 @@
 import type { ApiPromise } from '@polkadot/api/promise';
-import type { OnRpcRequestHandler } from '@metamask/snaps-types';
+import type { OnRpcRequestHandler } from '@metamask/snaps-sdk';
 import { assert } from 'superstruct';
 import type { MetamaskState } from './interfaces';
 import { EmptyMetamaskState } from './interfaces';
@@ -90,7 +90,6 @@ export const onRpcRequest: OnRpcRequestHandler = async ({ request }) => {
         validConfigureSchema,
         'Invalid configuration schema - Network name should be provided'
       );
-      console.info('Configuring snap with', request.params.configuration);
       return await configure(
         request.params.configuration.networkName,
         request.params.configuration

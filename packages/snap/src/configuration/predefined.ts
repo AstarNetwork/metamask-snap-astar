@@ -17,7 +17,7 @@ export const kusamaConfiguration: SnapConfig = {
     image: 'https://svgshare.com/i/L3o.svg',
     symbol: 'SDN'
   },
-  wsRpcUrl: 'https://shiden.api.onfinality.io/public'
+  wsRpcUrl: 'https://rpc.shiden.astar.network'
 };
 
 export const westendConfiguration: SnapConfig = {
@@ -28,7 +28,7 @@ export const westendConfiguration: SnapConfig = {
     image: 'https://svgshare.com/i/L2d.svg',
     symbol: 'SBY'
   },
-  wsRpcUrl: 'https://shibuya.public.blastapi.io'
+  wsRpcUrl: 'https://rpc.shibuya.astar.network'
 };
 
 export const polkadotConfiguration: SnapConfig = {
@@ -39,7 +39,7 @@ export const polkadotConfiguration: SnapConfig = {
     image: 'https://svgshare.com/i/zAE.svg',
     symbol: 'ASTR'
   },
-  wsRpcUrl: 'https://astar.api.onfinality.io/public'
+  wsRpcUrl: 'https://rpc.astar.network'
 };
 
 export const defaultConfiguration: SnapConfig = westendConfiguration;

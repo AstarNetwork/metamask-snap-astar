@@ -1,0 +1,773 @@
+{
+  "ConsoleLog": [
+    {
+      "type": "ConsoleLog",
+      "description": "Presence of console log function detected.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/polkadot/api.ts",
+        "lineNum": 15
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ConsoleLog",
+      "description": "Presence of console log function detected.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/polkadot/api.ts",
+        "lineNum": 28
+      },
+      "riskRating": 1
+    }
+  ],
+  "ESLinting": [
+    {
+      "type": "ESLinting",
+      "description": "This rule requires the `strictNullChecks` compiler option to be turned on to function correctly.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/snap.config.ts",
+        "lineNum": 0
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "This rule requires the `strictNullChecks` compiler option to be turned on to function correctly.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/snap.config.ts",
+        "lineNum": 0
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "This rule requires the `strictNullChecks` compiler option to be turned on to function correctly.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/configuration/index.ts",
+        "lineNum": 0
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "This rule requires the `strictNullChecks` compiler option to be turned on to function correctly.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/configuration/index.ts",
+        "lineNum": 0
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "Expected only 0 line after block description",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/configuration/index.ts",
+        "lineNum": 20
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "Expected only 0 line after block description",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/configuration/index.ts",
+        "lineNum": 40
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "Use 'as string' instead of '<string>'.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/configuration/index.ts",
+        "lineNum": 50
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "This rule requires the `strictNullChecks` compiler option to be turned on to function correctly.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/configuration/predefined.ts",
+        "lineNum": 0
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "This rule requires the `strictNullChecks` compiler option to be turned on to function correctly.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/configuration/predefined.ts",
+        "lineNum": 0
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "Use a `type` instead of an `interface`.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/configuration/predefined.ts",
+        "lineNum": 5
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "This rule requires the `strictNullChecks` compiler option to be turned on to function correctly.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/index.ts",
+        "lineNum": 0
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "This rule requires the `strictNullChecks` compiler option to be turned on to function correctly.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/index.ts",
+        "lineNum": 0
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "'state' is already declared in the upper scope on line 37 column 9.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/index.ts",
+        "lineNum": 77
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "This rule requires the `strictNullChecks` compiler option to be turned on to function correctly.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/interfaces.ts",
+        "lineNum": 0
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "This rule requires the `strictNullChecks` compiler option to be turned on to function correctly.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/interfaces.ts",
+        "lineNum": 0
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "Use a `type` instead of an `interface`.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/interfaces.ts",
+        "lineNum": 13
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "This rule requires the `strictNullChecks` compiler option to be turned on to function correctly.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/polkadot/account.ts",
+        "lineNum": 0
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "This rule requires the `strictNullChecks` compiler option to be turned on to function correctly.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/polkadot/account.ts",
+        "lineNum": 0
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "Missing JSDoc @returns declaration.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/polkadot/account.ts",
+        "lineNum": 19
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "This assertion is unnecessary since it does not change the type of the expression.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/polkadot/account.ts",
+        "lineNum": 25
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "This rule requires the `strictNullChecks` compiler option to be turned on to function correctly.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/polkadot/api.ts",
+        "lineNum": 0
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "This rule requires the `strictNullChecks` compiler option to be turned on to function correctly.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/polkadot/api.ts",
+        "lineNum": 0
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "Missing JSDoc @param \"rpcUrl\" declaration.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/polkadot/api.ts",
+        "lineNum": 8
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "Missing JSDoc @returns declaration.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/polkadot/api.ts",
+        "lineNum": 8
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "'api' is already declared in the upper scope on line 4 column 5.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/polkadot/api.ts",
+        "lineNum": 18
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "'e' is defined but never used.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/polkadot/api.ts",
+        "lineNum": 27
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "This rule requires the `strictNullChecks` compiler option to be turned on to function correctly.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/polkadot/tx.ts",
+        "lineNum": 0
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "This rule requires the `strictNullChecks` compiler option to be turned on to function correctly.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/polkadot/tx.ts",
+        "lineNum": 0
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "Missing JSDoc comment.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/polkadot/tx.ts",
+        "lineNum": 4
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "Missing JSDoc comment.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/polkadot/tx.ts",
+        "lineNum": 15
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "This rule requires the `strictNullChecks` compiler option to be turned on to function correctly.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/rpc/configure.ts",
+        "lineNum": 0
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "This rule requires the `strictNullChecks` compiler option to be turned on to function correctly.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/rpc/configure.ts",
+        "lineNum": 0
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "Use a `type` instead of an `interface`.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/rpc/configure.ts",
+        "lineNum": 8
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "Missing JSDoc comment.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/rpc/configure.ts",
+        "lineNum": 15
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "This rule requires the `strictNullChecks` compiler option to be turned on to function correctly.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/rpc/exportSeed.ts",
+        "lineNum": 0
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "This rule requires the `strictNullChecks` compiler option to be turned on to function correctly.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/rpc/exportSeed.ts",
+        "lineNum": 0
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "Missing JSDoc comment.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/rpc/exportSeed.ts",
+        "lineNum": 6
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "This assertion is unnecessary since it does not change the type of the expression.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/rpc/exportSeed.ts",
+        "lineNum": 22
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "This rule requires the `strictNullChecks` compiler option to be turned on to function correctly.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/rpc/generateTransactionPayload.ts",
+        "lineNum": 0
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "This rule requires the `strictNullChecks` compiler option to be turned on to function correctly.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/rpc/generateTransactionPayload.ts",
+        "lineNum": 0
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "Missing JSDoc comment.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/rpc/generateTransactionPayload.ts",
+        "lineNum": 6
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "This rule requires the `strictNullChecks` compiler option to be turned on to function correctly.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/rpc/getAddress.ts",
+        "lineNum": 0
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "This rule requires the `strictNullChecks` compiler option to be turned on to function correctly.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/rpc/getAddress.ts",
+        "lineNum": 0
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "Missing JSDoc comment.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/rpc/getAddress.ts",
+        "lineNum": 3
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "This rule requires the `strictNullChecks` compiler option to be turned on to function correctly.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/rpc/getMetamaskState.ts",
+        "lineNum": 0
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "This rule requires the `strictNullChecks` compiler option to be turned on to function correctly.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/rpc/getMetamaskState.ts",
+        "lineNum": 0
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "This rule requires the `strictNullChecks` compiler option to be turned on to function correctly.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/rpc/getPublicKey.ts",
+        "lineNum": 0
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "This rule requires the `strictNullChecks` compiler option to be turned on to function correctly.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/rpc/getPublicKey.ts",
+        "lineNum": 0
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "Missing JSDoc comment.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/rpc/getPublicKey.ts",
+        "lineNum": 4
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "This rule requires the `strictNullChecks` compiler option to be turned on to function correctly.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/rpc/send.ts",
+        "lineNum": 0
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "This rule requires the `strictNullChecks` compiler option to be turned on to function correctly.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/rpc/send.ts",
+        "lineNum": 0
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "Missing JSDoc comment.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/rpc/send.ts",
+        "lineNum": 6
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "'amount' may use Object's default stringification format ('[object Object]') when stringified.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/rpc/send.ts",
+        "lineNum": 19
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "This rule requires the `strictNullChecks` compiler option to be turned on to function correctly.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/rpc/substrate/getBalance.ts",
+        "lineNum": 0
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "This rule requires the `strictNullChecks` compiler option to be turned on to function correctly.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/rpc/substrate/getBalance.ts",
+        "lineNum": 0
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "Missing JSDoc @returns declaration.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/rpc/substrate/getBalance.ts",
+        "lineNum": 5
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "Missing JSDoc @param \"api\" description.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/rpc/substrate/getBalance.ts",
+        "lineNum": 7
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "Missing JSDoc @param \"address\" description.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/rpc/substrate/getBalance.ts",
+        "lineNum": 8
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "This rule requires the `strictNullChecks` compiler option to be turned on to function correctly.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/rpc/substrate/getBlock.ts",
+        "lineNum": 0
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "This rule requires the `strictNullChecks` compiler option to be turned on to function correctly.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/rpc/substrate/getBlock.ts",
+        "lineNum": 0
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "Missing JSDoc comment.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/rpc/substrate/getBlock.ts",
+        "lineNum": 5
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "Missing JSDoc comment.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/rpc/substrate/getBlock.ts",
+        "lineNum": 13
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "Missing JSDoc @returns declaration.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/rpc/substrate/getBlock.ts",
+        "lineNum": 21
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "There must be no indentation.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/rpc/substrate/getBlock.ts",
+        "lineNum": 25
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "Expected only 0 line after block description",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/rpc/substrate/getBlock.ts",
+        "lineNum": 27
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "Missing JSDoc @param \"blockTag\" description.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/rpc/substrate/getBlock.ts",
+        "lineNum": 29
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "Missing JSDoc @param \"api\" description.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/rpc/substrate/getBlock.ts",
+        "lineNum": 30
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "Switch is not exhaustive. Cases not matched: \"bigint\" | \"boolean\" | \"symbol\" | \"undefined\" | \"object\" | \"function\"",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/rpc/substrate/getBlock.ts",
+        "lineNum": 33
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "This rule requires the `strictNullChecks` compiler option to be turned on to function correctly.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/rpc/substrate/getTransactions.ts",
+        "lineNum": 0
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "This rule requires the `strictNullChecks` compiler option to be turned on to function correctly.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/rpc/substrate/getTransactions.ts",
+        "lineNum": 0
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "Missing JSDoc comment.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/rpc/substrate/getTransactions.ts",
+        "lineNum": 4
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "This rule requires the `strictNullChecks` compiler option to be turned on to function correctly.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/rpc/substrate/sign.ts",
+        "lineNum": 0
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "This rule requires the `strictNullChecks` compiler option to be turned on to function correctly.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/rpc/substrate/sign.ts",
+        "lineNum": 0
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "Missing JSDoc comment.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/rpc/substrate/sign.ts",
+        "lineNum": 8
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "Missing JSDoc comment.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/rpc/substrate/sign.ts",
+        "lineNum": 36
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "'api' is defined but never used. Allowed unused args must match /[_]+/u.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/rpc/substrate/sign.ts",
+        "lineNum": 37
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "This rule requires the `strictNullChecks` compiler option to be turned on to function correctly.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/util/messageCreator.ts",
+        "lineNum": 0
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "This rule requires the `strictNullChecks` compiler option to be turned on to function correctly.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/util/messageCreator.ts",
+        "lineNum": 0
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "Use a `type` instead of an `interface`.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/util/messageCreator.ts",
+        "lineNum": 1
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "'value' will use Object's default stringification format ('[object Object]') when stringified.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/util/messageCreator.ts",
+        "lineNum": 7
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "This rule requires the `strictNullChecks` compiler option to be turned on to function correctly.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/util/validation.ts",
+        "lineNum": 0
+      },
+      "riskRating": 1
+    },
+    {
+      "type": "ESLinting",
+      "description": "This rule requires the `strictNullChecks` compiler option to be turned on to function correctly.",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/util/validation.ts",
+        "lineNum": 0
+      },
+      "riskRating": 1
+    }
+  ],
+  "HardcodedSecrets": [
+    {
+      "type": "HardcodedSecrets",
+      "description": "Potential hardcoded secret detected: \"ExtrinsicPayload\"",
+      "position": {
+        "filePath": "/Volumes/Work/metamask-snap-astar/packages/snap/src/rpc/substrate/sign.ts",
+        "lineNum": 29
+      },
+      "riskRating": 3
+    }
+  ]
+}

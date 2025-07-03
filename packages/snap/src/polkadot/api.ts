@@ -15,10 +15,8 @@ async function initApi(rpcUrl: string): Promise<ApiPromise> {
     console.error('Error on provider creation', error);
     throw error;
   }
-  console.info('Provider created', provider);
   const api = await ApiPromise.create({ provider });
 
-  console.info('Api is ready', api);
   return api;
 }
 
@@ -35,14 +33,10 @@ export const resetApi = async (): Promise<void> => {
 };
 
 export const getApi = async (): Promise<ApiPromise> => {
-  console.info('Getting api');
   if (!api) {
     // api not initialized or configuration changed
     const config = await getConfiguration();
-    console.info('Config API', config);
-    console.info('Connecting to', config.wsRpcUrl);
     api = await initApi(config.wsRpcUrl);
-    console.info('API', api);
     isConnecting = false;
   } else {
     while (isConnecting) {

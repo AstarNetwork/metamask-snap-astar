@@ -13,7 +13,5 @@ export async function getBalance(api: ApiPromise, address?: string): Promise<str
   }
 
   const account = (await api.query.system.account(address)) as unknown as { data: AccountData };
-  console.info('QUERY BALANCE FOR ACCOUNT', account);
-
   return account.data.free.toString();
 }

@@ -6,6 +6,16 @@ import { getConfiguration } from '../configuration';
 
 export type SnapNetworks = 'astar' | 'shiden' | 'shibuya';
 
+const getCoinTypeByNetwork = (network: SnapNetworks): number => {
+  switch (network) {
+    case 'shiden':
+      return 809;
+    case 'shibuya':
+    case 'astar':
+      return 810;
+  }
+};
+
 /**
  * Returns KeyringPair if one is saved in wallet state, creates new one otherwise
  */
@@ -26,13 +36,3 @@ export async function getKeyPair(): Promise<KeyringPair> {
 
   return keyring.addFromSeed(stringToU8a(seed));
 }
-
-const getCoinTypeByNetwork = (network: SnapNetworks): number => {
-  switch (network) {
-    case 'shiden':
-      return 809;
-    case 'shibuya':
-    case 'astar':
-      return 810;
-  }
-};

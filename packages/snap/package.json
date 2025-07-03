@@ -1,99 +1,73 @@
 {
-	"name": "@astar-network/snap",
-	"version": "0.8.1",
-	"description": "Metamask snap to interact with Astar dapps.",
-	"main": "build/index.js",
-	"scripts": {
-		"lint": "yarn run lint:types && yarn run lint:style",
-		"lint:types": "tsc --noEmit --pretty",
-		"lint:style": "eslint 'src/**/*.{js,ts,tsx}' --fix",
-		"lint:fix": "yarn run lint --fix",
-		"start": "yarn run build && yarn run serve",
-		"prebuild": "rm -rf build dist ipfs",
-		"type-check": "tsc --noEmit",
-		"type-check:watch": "npm run type-check -- --watch",
-		"build": "yarn run build:tsc && yarn run build:snap",
-		"build:tsc": "tsc --pretty --project tsconfig.build.json",
-		"build:snap": "yarn build:snap:bundle && yarn build:snap:postprocess && yarn build:snap:eval",
-		"build:snap:bundle": "mm-snap build -s build/index.js --verboseErrors --transpilationMode localAndDeps --stripComments --eval false",
-		"build:snap:postprocess": "mm-snap manifest --fix",
-		"build:snap:eval": "mm-snap eval -b dist/bundle.js --verboseErrors",
-		"snapEval": "mm-snap eval",
-		"watch": "concurrently  --raw --kill-others \"yarn run watch:tsc\" \"yarn run watch:snap\" \"yarn run serve\"",
-		"watch:tsc": "yarn run build:tsc --watch",
-		"watch:snap": "mm-snap watch --debug",
-		"-prepublish": "yarn run build && mkdir ipfs && cp package.json ipfs/package.json",
-		"-publish": "export BUNDLE_URL=`ipd --no-clipboard -O -p infura dist/bundle.js` && sed -i 's/http:\\/\\/localhost:8081\\/dist\\/bundle.js/https:\\/\\/ipfs.infura.io\\/ipfs\\/'\"$BUNDLE_URL\"'/g' ipfs/package.json && ipd --no-clipboard -O -p infura ipfs/package.json",
-		"-postpublish": "rm -rf ipfs",
-		"serve": "mm-snap serve",
-		"test": "yarn run test:unit",
-		"test:unit": "mocha --colors"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/AstarNetwork/metamask-snap-astar.git"
-	},
-	"keywords": ["polkadot", "metamask", "snap", "plugin", "dapp", "wallet"],
-	"author": "Astar Network <info@astar.network>",
-	"license": "Apache-2.0",
-	"bugs": {
-		"url": "https://github.com/AstarNetwork/metamask-snap-astar/issues"
-	},
-	"homepage": "https://github.com/AstarNetwork/metamask-snap-astar#readme",
-	"web3Wallet": {
-		"bundle": {
-			"local": "dist/bundle.js",
-			"url": "http://localhost:8081/dist/bundle.js"
-		},
-		"initialPermissions": {
-			"alert": {},
-			"confirm": {},
-			"getPluginState": {},
-			"updatePluginState": {},
-			"wallet_manageAssets": {}
-		}
-	},
-	"files": [
-		"dist/*",
-		"build/*",
-		"src/*",
-		"test/*",
-		"images/*",
-		"tsconfig.json",
-		".eslintrc.js",
-		".mocharc.json",
-		"snap.config.js",
-		"snap.manifest.json",
-		"tsconfig.build.json"
-	],
-	"devDependencies": {
-		"@astar-network/metamask-astar-types": "workspace:^",
-		"@metamask/snaps-cli": "^6.3.0",
-		"@types/chai": "^4.3.9",
-		"@types/mocha": "^10.0.3",
-		"@types/sinon": "^10.0.20",
-		"@types/sinon-chai": "^3.2.11",
-		"@typescript-eslint/eslint-plugin": "^5.27.1",
-		"@typescript-eslint/parser": "^5.27.1",
-		"chai": "^4.3.10",
-		"concurrently": "^5.1.0",
-		"eslint": "^8.17.0",
-		"mocha": "^10.2.0",
-		"sinon": "^17.0.1",
-		"sinon-chai": "^3.7.0",
-		"strict-event-emitter-types": "^2.0.0",
-		"ts-node": "^8.6.2",
-		"typescript": "4.7.3"
-	},
-	"dependencies": {
-		"@metamask/key-tree": "^9.1.2",
-		"@metamask/snaps-types": "^3.1.0",
-		"@metamask/snaps-ui": "^3.1.0",
-		"@polkadot/api": "^12.3.1",
-		"@polkadot/keyring": "^13.0.2",
-		"@polkadot/types": "^12.3.1",
-		"@polkadot/util": "^13.0.2",
-		"deepmerge": "^4.3.1",
-		"superstruct": "^2.0.2"
-	}
+  "name": "@astar-network/snap",
+  "version": "0.9.1",
+  "description": "Metamask snap to interact with Astar dapps.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AstarNetwork/metamask-snap-astar.git"
+  },
+  "license": "(MIT-0 OR Apache-2.0)",
+  "main": "./dist/bundle.js",
+  "files": [
+    "dist/",
+    "images/",
+    "snap.manifest.json"
+  ],
+  "scripts": {
+    "allow-scripts": "yarn workspace root allow-scripts",
+    "build": "mm-snap build",
+    "build:clean": "yarn clean && yarn build",
+    "clean": "rimraf dist",
+    "lint": "yarn lint:eslint && yarn lint:misc --check",
+    "lint:eslint": "eslint . --cache --ext js,ts",
+    "lint:fix": "yarn lint:eslint --fix && yarn lint:misc --write",
+    "lint:misc": "prettier '**/*.json' '**/*.md' '**/*.yml' '!.yarnrc.yml' --ignore-path ../../.gitignore --no-error-on-unmatched-pattern",
+    "prepublishOnly": "mm-snap manifest",
+    "serve": "mm-snap serve",
+    "start": "mm-snap watch",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@metamask/snaps-sdk": "~6.24.0",
+    "@polkadot/api": "latest",
+    "@polkadot/keyring": "^13.0.2",
+    "@polkadot/types": "latest",
+    "@polkadot/util": "^13.0.2",
+    "deepmerge": "^4.3.1",
+    "superstruct": "^2.0.2"
+  },
+  "devDependencies": {
+    "@astar-network/metamask-astar-types": "workspace:^",
+    "@jest/globals": "^29.5.0",
+    "@metamask/snaps-cli": "^8.0.0",
+    "@metamask/snaps-jest": "^9.1.0",
+    "@types/chai": "^4.3.9",
+    "@types/mocha": "^10.0.3",
+    "@types/react": "18.2.4",
+    "@types/react-dom": "18.2.4",
+    "@types/sinon": "^10.0.20",
+    "@types/sinon-chai": "^3.2.11",
+    "@typescript-eslint/eslint-plugin": "^5.27.1",
+    "@typescript-eslint/parser": "^5.27.1",
+    "chai": "^4.3.10",
+    "concurrently": "^5.1.0",
+    "eslint": "^9.11.0",
+    "jest": "^29.5.0",
+    "mocha": "^10.2.0",
+    "rimraf": "^3.0.2",
+    "sinon": "^17.0.1",
+    "sinon-chai": "^3.7.0",
+    "strict-event-emitter-types": "^2.0.0",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^8.6.2",
+    "typescript": "~5.7.3"
+  },
+  "packageManager": "yarn@3.2.1",
+  "engines": {
+    "node": "22.x"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
 }

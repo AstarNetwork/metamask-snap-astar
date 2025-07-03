@@ -1,5 +1,5 @@
 {
-  "version": "0.8.1",
+  "version": "0.9.1",
   "description": "The Astar snap.",
   "proposedName": "Astar Wallet",
   "repository": {
@@ -7,10 +7,10 @@
     "url": "git+https://github.com/AstarNetwork/metamask-snap-astar.git"
   },
   "source": {
-    "shasum": "Ju0S/uUo1OKd1xvFzBeGRU8i9H7kEb5VkQsbMlVNOHI=",
+    "shasum": "7668ZwlcG4/X7WBaTRZYmUJFOoewItCkShKhoaeo38o=",
     "location": {
       "npm": {
-        "filePath": "./dist/bundle.js",
+        "filePath": "dist/bundle.js",
         "iconPath": "images/logo.svg",
         "packageName": "@astar-network/snap",
         "registry": "https://registry.npmjs.org/"
@@ -18,13 +18,14 @@
     }
   },
   "initialPermissions": {
+    "snap_dialog": {},
+    "snap_manageState": {},
     "endowment:rpc": {
       "dapps": true,
-      "snaps": true
+      "snaps": false
     },
     "endowment:network-access": {},
     "endowment:webassembly": {},
-    "snap_dialog": {},
     "snap_getBip44Entropy": [
       {
         "coinType": 810
@@ -32,8 +33,8 @@
       {
         "coinType": 809
       }
-    ],
-    "snap_manageState": {}
+    ]
   },
+  "platformVersion": "6.24.0",
   "manifestVersion": "0.1"
 }
