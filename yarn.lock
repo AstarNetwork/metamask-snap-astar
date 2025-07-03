@@ -49,7 +49,7 @@ __metadata:
     "@polkadot/api": "npm:^10.9.1"
     "@polkadot/extension-inject": "npm:^0.46.5"
     "@polkadot/types-augment": "npm:^10.9.1"
-    "@types/node": "npm:^17.0.36"
+    "@types/node": "npm:22"
     "@typescript-eslint/eslint-plugin": "npm:^5.27.1"
     "@typescript-eslint/parser": "npm:^5.27.1"
     eslint: "npm:^8.17.0"
@@ -6024,20 +6024,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^16.11.39":
-  version: 16.18.126
-  resolution: "@types/node@npm:16.18.126"
-  checksum: 10c0/5c137eb141d33de32b16ff26047ff6d449432b58d0d25f7cced2040c97727d81fe1099a7581eb336d14a6840f5b09e363bdd43d7a6995e8e81eb47aa51e413fc
-  languageName: node
-  linkType: hard
-
-"@types/node@npm:^17.0.36":
-  version: 17.0.45
-  resolution: "@types/node@npm:17.0.45"
-  checksum: 10c0/0db377133d709b33a47892581a21a41cd7958f22723a3cc6c71d55ac018121382de42fbfc7970d5ae3e7819dbe5f40e1c6a5174aedf7e7964e9cb8fa72b580b0
-  languageName: node
-  linkType: hard
-
 "@types/parse-json@npm:^4.0.0":
   version: 4.0.2
   resolution: "@types/parse-json@npm:4.0.2"
@@ -10870,7 +10856,7 @@ __metadata:
     "@testing-library/react": "npm:^13.3.0"
     "@testing-library/user-event": "npm:^13.5.0"
     "@types/jest": "npm:^27.5.2"
-    "@types/node": "npm:^16.11.39"
+    "@types/node": "npm:22"
     "@types/react": "npm:^18.0.12"
     "@types/react-dom": "npm:^18.0.5"
     "@typescript-eslint/eslint-plugin": "npm:^5.27.1"
