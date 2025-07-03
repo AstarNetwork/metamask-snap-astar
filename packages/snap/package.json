@@ -1,6 +1,6 @@
 {
   "name": "@astar-network/snap",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "Metamask snap to interact with Astar dapps.",
   "repository": {
     "type": "git",
@@ -64,7 +64,7 @@
   },
   "packageManager": "yarn@3.2.1",
   "engines": {
-    "node": ">=18.6.0"
+    "node": "22.x"
   },
   "publishConfig": {
     "access": "public",
