@@ -21,10 +21,3 @@ export async function showConfirmationDialog(message: ConfirmationDialogContent)
     }
   })) as boolean;
 }
-
-
-// panel([
-//         heading(message.prompt || 'Are you sure?'),
-//         text(message.description || ''),
-//         text(message.textAreaContent || '')
-//       ]),
